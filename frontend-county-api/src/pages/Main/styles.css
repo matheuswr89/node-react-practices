@@ -1,0 +1,112 @@
+.paises-container {
+  width: 100%;
+  padding: 0 60px;
+  margin: 32px auto;
+}
+
+.paises-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.paises-container ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 90px;
+  grid-row-gap: 60px;
+  list-style: none;
+}
+
+.paises-container ul li {
+  background: var(--primaryBorderBg);
+  box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 1);
+  border-radius: 8px;
+  position: relative;
+}
+.paises-container ul li img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 9px !important;
+  border-top-right-radius: 9px !important;
+}
+
+.paises-container ul li h3 {
+  line-height: 21px;
+  margin: 20px;
+  font-size: 22px;
+}
+
+.paises-container ul li p {
+  line-height: 21px;
+  margin: 0 0 5px 20px;
+  font-size: 14px;
+}
+.paises-container ul li p:nth-child(4) {
+  padding-bottom: 20px !important;
+}
+
+.formControl {
+  background: var(--primaryBorderBg) !important;
+  color: var(--primaryText) !important;
+  border-radius: 5px;
+  margin: 1px;
+  width: 160px;
+}
+.select-item {
+  background: var(--primaryBorderBg) !important;
+  background-position-x: center;
+  color: var(--primaryText) !important;
+}
+.input-label {
+  color: var(--primaryText) !important;
+}
+.root {
+  background-color: var(--primaryBorderBg) !important;
+  color: var(--primaryText) !important;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+.input-text {
+  background-color: var(--primaryBorderBg);
+  color: var(--primaryText) !important;
+  border: 0 none !important;
+  margin-left: 1px;
+  outline: 0;
+  width: 340px;
+  flex: 1;
+}
+
+.iconButton {
+  color: var(--primaryInputText) !important;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .paises-container ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .paises-container ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .paises-container ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .paises-container header {
+    display: grid;
+  }
+
+  .root {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+html {
+    /* global colors */
+    --primaryTheme: hsl(200, 15%, 8%);
+  
+    --primaryBg: hsl(0, 0%, 98%);
+  
+    --primaryText:hsl(200, 15%, 8%);
+  
+    --primaryInputText: hsl(0, 0%, 52%);
+  
+    --primaryBorderBg: hsl(0, 0%, 100%);
+  }
+  
+  html[data-theme="dark"] {
+    /* global colors */
+    --primaryTheme: hsl(0, 0%, 100%);
+    --primaryBg: hsl(207, 26%, 17%);
+    --primaryText: hsl(0, 0%, 100%);
+    --secondaryText: hsl(0, 0%, 100%);
+    --primaryInputText: hsl(0, 0%, 52%);
+    --primaryBorderBg: hsl(209, 23%, 22%);
+  }
+  
